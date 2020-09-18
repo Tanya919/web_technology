@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0 10px 0 10px;
+            box-sizing: border-box;
+        }
+        
+        .content {
+            border: 2px solid rgb(116, 116, 230);
+        }
+        
+        header {
+            text-align: center;
+        }
+        
+        header h1 {
+            display: inline;
+            font-family: 'Josefin Sans', sans-serif;
+            letter-spacing: 0.12em;
+            font-size: 3rem;
+        }
+        
+        .name {
+            margin-top: 40px;
+            font-family: 'Julius Sans One', sans-serif;
+        }
+        
+        .basic_details {
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            border: 1px solid greenyellow;
+            margin-right: 20px;
+        }
+        
+        #box {
+            position: absolute;
+            left: 200px;
+            width: 200px;
+        }
+        
+        .container {
+            display: inline-block;
+            position: absolute;
+            left: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <img src="LOGO.png" alt="logo" height="100px" width="100px">
+            <h1 class="heading"> REGISTRATION FORM ENTRY</h1>
+            <p style="color:brown; font-family: 'Concert One', cursive;">FORM ID:1118485904</p>
+            <hr>
+        </header>
+        <main style="padding-left: 20px;">
+            <p class="name">BASIC DETAILS</p>
+            <div class="basic_details">
+                <label for="form number">FORM NUMBER</label>
+                <INPUT type="text" id="box" name="form number" required><br><br>
+                <label for="name">NAME</label>
+                <input type="text" id="box" name="f_name" required>
+                <BR>
+                <BR>
+                <label for="ROLL">ROLL NUMBER</label>
+                <input type="text" id="box" name="roll" required><br><br>
+
+                <label for="gender">GENDER</label>
+                <div class="container">
+                    <input type="radio" name="gender" value="Female" id="female">Female
+                    <input type="radio" name="gender" value="Male">Male
+                </div><br><br>
+                <label for="dob">DOB</label>
+                <input type="date" name="dob" value="dob" id="box"> <br><br>
+                <label for="pwd">PWD</label>
+                <DIV class="container">
+                    <input type="radio" name="pwd" value="Yes" id="female">Yes
+                    <input type="radio" name="pwd" value="No">No
+                </DIV><br><br>
+                <label for="category">CATEGORY</label>
+                <select name="category" id="box">
+                        <option>GENERAL</option>
+                        <option>OBC</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                    </select>
+                <br><br>
+                <label for="address">ADDRESS</label><br>
+                <textarea rows="7" cols="35"></textarea><br>
+                <p>PLEASE INPUT THE CORRECT PIN CODE</p>
+                <LABEL for="pin_code">PIN CODE</LABEL>
+                <INPUT type="text" id="box">
+                <br><br>
+                <label for="phone">PHONE OF STUDENT</label>
+                <input TYPE="text" id="box"><br>
+                <bR>
+                <label for="phone">PHONE OF PARENTS</label>
+                <input type="text" id="box">
+            </div>
+            <p class="name">ACADEMIC INFORMATION</p>
+            <div class="basic_details">
+                <label for="course">COURSE</label>
+
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
