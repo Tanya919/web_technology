@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=IM+Fell+Double+Pica&family=Itim&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0 10px 0 10px;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .content {
+            border: 2px solid rgb(116, 116, 230);
+        }
+        
+        header {
+            text-align: center;
+            background: #FDFC47;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24FE41, #FDFC47);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        
+        header h1 {
+            display: inline;
+            font-family: 'Josefin Sans', sans-serif;
+            letter-spacing: 0.12em;
+            font-size: 3rem;
+        }
+        
+        .name {
+            margin-top: 40px;
+            font-family: 'Julius Sans One', sans-serif;
+        }
+        
+        .basic_details {
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            border: 1px solid greenyellow;
+            margin-right: 20px;
+            background: #2980B9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #498ab6);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFFFFF, #6DD5FA, #498dbb);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        
+        #box {
+            position: absolute;
+            left: 190px;
+            width: 200px;
+            border: 1px solid black;
+            height: 20px;
+            border-radius: 5px;
+            background-color: honeydew;
+        }
+        
+        #box:hover {
+            border: 1px solid red;
+            box-shadow: 0 1px 2px 1px black;
+        }
+        
+        .container {
+            display: inline-block;
+            position: absolute;
+            left: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <img src="LOGO.png" alt="logo" height="100px" width="100px">
+            <h1 class="heading"> REGISTRATION FORM ENTRY</h1>
+            <p style="color:brown; font-family: 'Concert One', cursive;">FORM ID:1118485904</p>
+            <hr>
+        </header>
+        <main style="padding-left: 20px;">
+            <p class="name">BASIC DETAILS</p>
+            <div class="basic_details">
+                <label for="form number">FORM NUMBER</label>
+                <INPUT type="text" id="box" name="form number" required><br><br>
+                <label for="name">NAME</label>
+                <input type="text" id="box" name="f_name" required>
+                <BR>
+                <BR>
+                <label for="ROLL">ROLL NUMBER</label>
+                <input type="text" id="box" name="roll" required><br><br>
+
+                <label for="gender">GENDER</label>
+                <div class="container">
+                    <input type="radio" name="gender" value="Female" id="female">Female
+                    <input type="radio" name="gender" value="Male">Male
+                </div><br><br>
+                <label for="dob">DOB</label>
+                <input type="date" name="dob" value="dob" id="box"> <br><br>
+                <label for="pwd">PWD</label>
+                <DIV class="container">
+                    <input type="radio" name="pwd" value="Yes" id="female">Yes
+                    <input type="radio" name="pwd" value="No">No
+                </DIV><br><br>
+                <label for="category">CATEGORY</label>
+                <select name="category" id="box">
+                        <option>GENERAL</option>
+                        <option>OBC</option>
+                        <option>SC</option>
+                        <option>ST</option>
+                </select>
+                <br><br>
+                <label for="address">ADDRESS</label><br>
+                <textarea rows="7" cols="35" style="background-color: honeydew;"></textarea><br>
+                <p>PLEASE INPUT THE CORRECT PIN CODE</p>
+                <LABEL for="pin_code">PIN CODE</LABEL>
+                <INPUT type="text" id="box">
+                <br><br>
+                <label for="phone">PHONE OF STUDENT</label>
+                <input TYPE="text" id="box"><br>
+                <bR>
+                <label for="phone">PHONE OF PARENTS</label>
+                <input type="text" id="box">
+            </div>
+            <p class="name">ACADEMIC INFORMATION</p>
+            <div class="basic_details">
+                <label for="course">COURSE</label>
+                <select name="course" id="box">
+                    <option>B.TECH</option>
+                    <option>B.ARCH</option>
+                    <option>M.TECH</option>
+                    <option>M.SC</option>
+                    <option>PHD</option>
+                </select>
+                <BR>
+                <BR>
+                <label for="semester">BRANCH</label>
+                <INPUT type="text" id="box"><br><br>
+                <label for="semester">SEMESTER</label>
+                <select name="semester" id="box">
+                    <option>1st</option>
+                    <option>2nd</option>
+                    <option>3rd</option>
+                    <option>4th</option>
+                    <option>5th</option>
+                    <option>6th</option>
+                    <option>7th</option>
+                    <option>8th</option>
+                </select>
+                <BR>
+                <BR>
+                <label for="rank">ALL INDIA RANK</label>
+                <input type="text" id="box"><span style="position: absolute; left:410px;">(2018 JEE MAIN/GATE)</span><br><br>
+                <label for="rank">CATEGORY RANK</label>
+                <input type="text" id="box"><span style="position: absolute; left:410px;">(2018 JEE MAIN/GATE)</span><br><br>
+                <label for="cgpa">CGPA</label>
+                <input type="text" id="box"><br><br>
+                <label for="backlog">BACKLOG</label>
+                <div class="container">
+                    <input type="radio" name="backlog" value="yes">YES
+                    <input type="radio" name="backlog" value="no">NO
+                </div><br><br>
+                <label for="hostel">HOSTEL</label>
+                <div class="container">
+                    <input type="radio" name="hostel" value="yes">YES
+                    <input type="radio" name="hostel" value="no">NO&nbsp;<span>(IF ANY)</span>
+                </div><br><br>
+                <label for="name_hostel">NAME OF HOSTEL</label>
+                <input type="text" id="box"><br><br>
+                <label for="room_no">ROOM NUMBER</label>
+                <input type="text" id="box">
+            </div>
+            <p class="name">ACCOUNT DETAILS FOR REFUNDING PROCESS</p>
+            <div class="basic_details">
+                <label for="acc_holder_name">A/C HOLDER NAME</label>
+                <input type="text" id="box"><br><br>
+                <label for="acc_number">ACCOUNT NUMBER</label>
+                <input type="text" id="box"><br><br>
+                <label for="ifsc">IFSC CODE</label>
+                <input type="text" id="box"><br><br>
+                <label for="bank_name">BANK NAME</label>
+                <input type="text" id="box"><br><br>
+                <label for="bank_branch">BANK BRANCH</label>
+                <input type="text" id="box">
+
+            </div>
+
+
+        </main>
+        <footer style="text-align: center;">
+            Made with <span style="color: red;">&hearts;</span> by <span style="font-family: cursive;">Tanya Kumari</span><br> &copy;1906035
+        </footer>
+    </div>
+
+</body>
+
+</html>
